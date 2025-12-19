@@ -1,16 +1,21 @@
 Package: linkmlR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: R Wrapper for LinkML Using Reticulate
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Tim", "Alamenciak",
+      email = "tim.a@uwaterloo.ca",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Validate and generate artifacts from LinkML schemas using reticulate
+  to call the Python library.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    jsonlite,
+    reticulate,
+    rlang,
+    yaml

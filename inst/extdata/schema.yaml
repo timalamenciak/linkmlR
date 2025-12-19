@@ -1,0 +1,43 @@
+id: https://example.org/person-schema
+name: person_schema
+title: Simple Person Schema
+description: Minimal LinkML schema for testing validation
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ex: https://example.org/
+
+default_prefix: ex
+default_range: string
+
+imports:
+  - linkml:types
+
+classes:
+  Person:
+    description: A human being
+    slots:
+      - id
+      - name
+      - age
+      - email
+
+slots:
+  id:
+    identifier: true
+    range: string
+    required: true
+    description: Unique identifier for the person
+
+  name:
+    range: string
+    required: true
+    description: Full name of the person
+
+  age:
+    range: integer
+    description: Age in years
+
+  email:
+    range: string
+    description: Email address
